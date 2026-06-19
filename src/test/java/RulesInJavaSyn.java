@@ -5,7 +5,7 @@
 // Rule 5 - User can create n number of method inside the class which declared
 // Rule 6 - You can create only one main method Inside the class which you created
 // Rule 7 - If you want to access the one method from one class file to another class file - Instant need to be created
-// Rule 8 - All the code should be endup with semi column (Not class syntax or method sysntex)
+// Rule 8 - All the code should be endup with semicolon (Not class syntax or method sysntex)
 
 
 
