@@ -6,6 +6,7 @@ public class DataTypes {
 	// 2. short - 16-bit signed integer
 	// 3. int - 32-bit signed integer
 	// 4. long - 64-bit signed integer
+
 	// 5. float - 32-bit floating-point number
 	// 6. double - 64-bit floating-point number
 	// 7. char - 16-bit Unicode character
