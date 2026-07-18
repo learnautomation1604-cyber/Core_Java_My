@@ -1,0 +1,31 @@
+1. What is string?
+2. Why we need string?
+3. How to create an string?
+4. Memory allocation in string?
+5. What is string pool? - Interview Qestion?
+6. Difference b/w mutuable and Immutable?
+7. String?  mutuable and Immutable? Why?
+8. Why did java make string Immutable?
+9. String Comparison?
+10. equals() method?
+11. Common String methods? length(), charAt(), substring()
+12. toUpperCase()?
+13. toLowerCase()?
+14. contains()?
+15. startswith()?
+16. endswith()?
+17. indexof()?
+18. lastIndexof()?
+19. replace()?
+20.trim()?
+21. isEmpty()?
+22. split()?
+23. concat():
+24. Iterating through charectors?
+25.Converting b/w string and charector array?
+26.stringBuilder()?
+27. StringBuffer()?
+
+
+
+
