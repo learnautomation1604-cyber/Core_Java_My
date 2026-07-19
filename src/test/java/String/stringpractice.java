@@ -1,0 +1,54 @@
+package String;
+
+import org.openqa.selenium.devtools.v146.dom.model.ShapeOutsideInfo;
+
+public class stringpractice {
+
+    static void stringbasic(){
+        // A string is a sequence of charecters used to store text
+        String name = "Mythili";
+        System.out.println(name);
+        String str = new String("Mythili");
+        System.out.println(str);
+    }
+
+    static void concater(){
+        String s = "Java ";
+        String m = s.concat("Programming");
+        System.out.println(m);
+    }
+    static void lenthero(){
+        String s = "Java";
+        System.out.println(s.length());
+    }
+    static void charat() {
+        String st = "Anbarasu A";
+
+        for (int i = 0; i < st.length(); i++) {
+            char ch = st.charAt(i);
+            System.out.println(ch);
+        }
+    }
+    static void stringcompare(){
+        String str = "java";
+        String st = "java";
+
+        String result = String.valueOf((str==st));
+        String eq = String.valueOf(str.equals(st));
+        System.out.println(eq);
+        System.out.println(result);
+    }
+
+
+
+    public static void main(String[] args) {
+        stringbasic();
+        concater();
+        lenthero();
+        charat();
+        stringcompare();
+
+
+
+    }
+}

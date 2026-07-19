@@ -4,9 +4,10 @@
 4. Memory allocation in string?
 5. What is string pool? - Interview Qestion?
 6. Difference b/w mutuable and Immutable?
-7. String?  mutuable and Immutable? Why?
+7. String?  mutuable and Immutable? Why? - String is immutable
 8. Why did java make string Immutable?
 9. String Comparison?
+
 10. equals() method?
 11. Common String methods? length(), charAt(), substring()
 12. toUpperCase()?
