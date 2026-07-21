@@ -7,24 +7,23 @@
 7. String?  mutuable and Immutable? Why? - String is immutable
 8. Why did java make string Immutable?
 9. String Comparison?
-
 10. equals() method?
 11. Common String methods? length(), charAt(), substring()
 12. toUpperCase()?
 13. toLowerCase()?
 14. contains()?
+
+
 15. startswith()?
 16. endswith()?
 17. indexof()?
 18. lastIndexof()?
-19. replace()?
-20.trim()?
+20. trim()?
 21. isEmpty()?
 22. split()?
-23. concat():
 24. Iterating through charectors?
-25.Converting b/w string and charector array?
-26.stringBuilder()?
+25. Converting b/w string and charector array?
+26. stringBuilder()?
 27. StringBuffer()?
 
 
