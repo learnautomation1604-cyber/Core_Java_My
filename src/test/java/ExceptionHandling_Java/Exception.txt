@@ -1,0 +1,47 @@
+// Define exception Handling?
+// What are the exception handling keywords?
+try
+, catch
+, finally
+, throw - Used to explicitly throw an exception
+, throws - Used to declare exception in amethod signature
+
+combination of usage:
+
+1. try catch
+2. mutiple catch blocks
+3. finally block
+4. throw keyword Vs throws keyword - Interview Question Very important
+
+Types of Exception:
+
+1. Checked Exception (Compile time)- IOException, SQLException, ClassNotFoundException,
+2. Unchecked Exception (Run time) - Arithmatic exception, NullPointerException, ArraryIndexOutOfBoundException
+
+Explain about Exception Hierarchy ?
+                        Object
+                           │
+                           ▼
+                     Throwable
+                     /        \
+                    /          \
+                   ▼            ▼
+               Error        Exception
+                                │
+               ┌────────────────┴────────────────┐
+               │                                 │
+               ▼                                 ▼
+      Checked Exceptions              RuntimeException
+      (Compile-time)                 (Unchecked Exceptions)
+               │                                 │
+      ┌────────┼────────┐              ┌─────────┼─────────┐
+      ▼        ▼        ▼              ▼         ▼         ▼
+IOException SQLException ClassNotFoundException NullPointerException
+                                                  ArithmeticException
+                                                  ArrayIndexOutOfBoundsException
+                                                  NumberFormatException
+                                                  ClassCastException
+                                                  IllegalArgumentException
+// Typecasting in java ?
+
+
