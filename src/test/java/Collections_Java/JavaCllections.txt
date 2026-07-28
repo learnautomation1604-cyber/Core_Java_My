@@ -1,0 +1,35 @@
+// Define Collection framework - The collection framework is a predefined architecture in java
+that provides interfaces and classes to store, retrieve, manipulate, search, sort, and process
+group of Objects dynamically.
+
+Collection framework -- https://chatgpt.com/share/6a63a676-2e20-83e8-989e-eb9199440e38
+
+Collections - Interface - List, Set,Queue
+            - Interface - Map
+Collections - classes - (List(Interface) - Array list (class), linked list(class)), (set(Interface) - Hash Set(class), Linked Hash set(class)
+map(Interface) -  Hash map(class), Linked Hash map(class)
+
+
+| Collection    | Duplicates | Insertion Order       | Sorted | Thread Safe |
+| ------------- | ---------- | ----------- | ------ | ----------- |
+| ArrayList     | ✅ Yes      | ✅ Yes       | ❌ No   | ❌ No        |
+| LinkedList    | ✅ Yes      | ✅ Yes       | ❌ No   | ❌ No        |
+
+
+| Vector        | ✅ Yes      | ✅ Yes       | ❌ No   | ✅ Yes       |
+| Stack         | ✅ Yes      | LIFO        | ❌ No   | ✅ Yes       |
+
+
+| HashSet       | ❌ No       | ❌ No        | ❌ No   | ❌ No        |
+| LinkedHashSet | ❌ No       | ✅ Insertion | ❌ No   | ❌ No        |
+
+
+| TreeSet       | ❌ No       | ✅ Sorted    | ✅ Yes  | ❌ No        |
+| HashMap       | Keys: ❌ No | ❌ No        | ❌ No   | ❌ No        |
+| LinkedHashMap | Keys: ❌ No | ✅ Insertion | ❌ No   | ❌ No        |
+| TreeMap       | Keys: ❌ No | ✅ Sorted    | ✅ Yes  | ❌ No        |
+| Hashtable     | Keys: ❌ No | ❌ No        | ❌ No   | ✅ Yes       |
+
+
+
+input [] = [456, 454, 456, 234,678,098,456,123,321]
