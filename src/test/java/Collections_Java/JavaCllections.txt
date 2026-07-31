@@ -16,9 +16,6 @@ map(Interface) -  Hash map(class), Linked Hash map(class)
 | LinkedList    | ✅ Yes      | ✅ Yes       | ❌ No   | ❌ No        |
 
 
-| Vector        | ✅ Yes      | ✅ Yes       | ❌ No   | ✅ Yes       |
-| Stack         | ✅ Yes      | LIFO        | ❌ No   | ✅ Yes       |
-
 
 | HashSet       | ❌ No       | ❌ No        | ❌ No   | ❌ No        |
 | LinkedHashSet | ❌ No       | ✅ Insertion | ❌ No   | ❌ No        |
@@ -27,9 +24,6 @@ map(Interface) -  Hash map(class), Linked Hash map(class)
 | TreeSet       | ❌ No       | ✅ Sorted    | ✅ Yes  | ❌ No        |
 | HashMap       | Keys: ❌ No | ❌ No        | ❌ No   | ❌ No        |
 | LinkedHashMap | Keys: ❌ No | ✅ Insertion | ❌ No   | ❌ No        |
-| TreeMap       | Keys: ❌ No | ✅ Sorted    | ✅ Yes  | ❌ No        |
-| Hashtable     | Keys: ❌ No | ❌ No        | ❌ No   | ✅ Yes       |
-
 
 
 input [] = [456, 454, 456, 234,678,098,456,123,321]
