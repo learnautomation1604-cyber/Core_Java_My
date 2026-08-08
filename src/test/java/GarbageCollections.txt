@@ -1,0 +1,5 @@
+Garbage Collection is an automatic memory management process in Java that identifies and removes objects that are no longer being used, thereby freeing heap memory.
+
+Simple definition
+
+Garbage Collection automatically removes unused objects from the heap memory.
