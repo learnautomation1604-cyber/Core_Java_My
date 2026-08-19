@@ -1,0 +1,68 @@
+// Locators - id, name, Classname, linktext, partial linktext,
+// css selector - Syntax - tagname.classvalue. tagname#idValue
+
+, xpath
+
+// xpath - Relative xpath(Dynamic x path), Absolute xpath (Static xpath)
+//X path syntax - //tagname[@locator='Value of the locator']
+
+
+
+// X Path
+
+Syntax of the x path - //tagname[@locator='locatorvalue']
+
+// Type of xpath - Aboslute x path and Relative x path
+// Absolut xpath -- Its a dynamic in nature - We canot use in the automation
+// Relative xpath -- 100% We should use relative x path in your real time automation
+// Type of Relative xpath
+
+Axes x path
+
+1. By Tag name - //tagname
+2. By Attribute - class, id, placeholder
+3. By Mutiple Attributes - //li[@class='vl-flyout-nav__js-tab']//a[@class='vl-flyout-nav__link-container']//*[text()='Motors']
+
+Ex -  //div[@id='gh-ac-wrap']//button[@class='gh-search-input__clear-btn icon-btn icon-btn--transparent icon-btn--small']
+
+\
+// important - 4. Using OR -- //*[starts-with(@class, 'btn btn--fluid b' or @class, 'sdfdsf')]
+
+
+
+// important - 5. Contins methos - , //*[contains(@class, 'reg-label')],
+6. start-with() - //*[starts-with(@class, 'btn btn--fluid b')]
+Important => 7. text() --- //*[text()='Sign in to your account']
+Omportant - 8.contains(text()); ----  //*[contains(text(),'Sign in to your account')] *[contains(@name, 'userid')]
+9. Indexing in reative path ---- (//li[@class='vl-flyout-nav__js-tab'])[3]
+10. last() function / 11. possition() ---
+
+await page.locator("//*[@class='vl-flyout-nav__js-tab']").last().click();
+
+await page.locator("//*[@class='vl-flyout-nav__js-tab']").first().click();
+
+await page.locator("//*[@class='vl-flyout-nav__js-tab']").nth(3).click();
+
+
+12. parent navigation
+
+//*[text()='Your recently viewed items']/parent::div[@class='flex justify-between items-end']
+
+
+13. child navigation
+//div[@class='dp-item-carousel-module__container']/child::div[@class='flex flex-col dp-item-carousel-module__header']
+14. Descendent navigation
+15. Following - Sibling  - //div[@class='dp-item-carousel-module__container']/following::div[@class='flex flex-col dp-item-carousel-module__header']
+16. Preceding - Sibling - //div[@class='dp-item-carousel-module__container']/preceding::div[@class='flex flex-col dp-item-carousel-module__header']
+17. Ancestors
+18. Common Relative XPath Patters -
+ By ID, BY Name, By Class, By Placeholder, By Type, By text, By Partial Text,
+
+Id Based Based x path = //h1[@id='greeting-msg']
+
+
+
+
+
+
+
