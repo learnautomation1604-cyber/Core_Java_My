@@ -41,7 +41,7 @@ public class BrowserLaunchAndNavigation {
 
         // Browser closing
         driver.close();
-//        driver.quit();
+        driver.quit();
 
 
 
