@@ -40,6 +40,5 @@ public class RadioButtonPractice {
         driver.quit();
 
 
-
     }
 }
