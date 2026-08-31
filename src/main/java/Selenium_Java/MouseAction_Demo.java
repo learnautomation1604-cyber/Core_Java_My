@@ -49,15 +49,20 @@ public class MouseAction_Demo {
         Thread.sleep(2000);
 
         driver.navigate().to("https://testautomationpractice.blogspot.com/");
+        WebElement ddWebElement = driver.findElement(By.xpath("//h2[normalize-space()='Drag and Drop']"));
+        action.moveToElement(ddWebElement).perform();
 
         // Scroll to the element
         // Drag and Drop
 
-        WebElement source = driver.findElement(By.xpath(""));
-
-        WebElement target = driver.findElement(By.xpath(""));
-
+        WebElement source = driver.findElement(By.xpath("//div[@id='draggable']"));
+        Thread.sleep(2000);
+        WebElement target = driver.findElement(By.xpath("//div[@id='droppable']"));
+        Thread.sleep(2000);
         action.dragAndDrop(source, target).perform();
+        Thread.sleep(2000);
+
+
 
 
         driver.quit();

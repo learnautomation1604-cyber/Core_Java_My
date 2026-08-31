@@ -1,0 +1,17 @@
+| S.No | Action       | Selenium Java Method                   | Example                                    |
+| ---: | ------------ | -------------------------------------- | ------------------------------------------ |
+|    1 | Type text    | `sendKeys()`                           | `actions.sendKeys("Selenium").perform();`  |
+|    2 | Press Enter  | `sendKeys(Keys.ENTER)`                 | `actions.sendKeys(Keys.ENTER).perform();`  |
+|    3 | Press Tab    | `sendKeys(Keys.TAB)`                   | `actions.sendKeys(Keys.TAB).perform();`    |
+|    4 | Press Escape | `sendKeys(Keys.ESCAPE)`                | `actions.sendKeys(Keys.ESCAPE).perform();` |
+|    5 | Select All   | `keyDown()` + `sendKeys()` + `keyUp()` | `CTRL + A`                                 |
+|    6 | Copy         | `keyDown()` + `sendKeys()` + `keyUp()` | `CTRL + C`                                 |
+|    7 | Paste        | `keyDown()` + `sendKeys()` + `keyUp()` | `CTRL + V`                                 |
+|    8 | Cut          | `keyDown()` + `sendKeys()` + `keyUp()` | `CTRL + X`                                 |
+|    9 | Undo         | `keyDown()` + `sendKeys()` + `keyUp()` | `CTRL + Z`                                 |
+|   10 | Shift key    | `keyDown(Keys.SHIFT)`                  | Hold Shift                                 |
+|   11 | Control key  | `keyDown(Keys.CONTROL)`                | Hold Ctrl                                  |
+|   12 | Alt key      | `keyDown(Keys.ALT)`                    | Hold Alt                                   |
+|   13 | Release key  | `keyUp()`                              | `actions.keyUp(Keys.SHIFT)`                |
+|   14 | Backspace    | `sendKeys(Keys.BACK_SPACE)`            | Delete previous character                  |
+|   15 | Delete       | `sendKeys(Keys.DELETE)`                | Delete selected character                  |
