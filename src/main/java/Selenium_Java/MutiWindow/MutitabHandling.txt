@@ -1,0 +1,11 @@
+1. Mutitab handling
+2. Multi-Window Handling
+3. Handling and Existung tab and window
+4. Mutiple Tab's and Windows
+
+
+getWindowHandle()
+getWindowHandles()
+switchTo().window()
+newWindow(TAB)
+newWindow(Window)
