@@ -5,66 +5,108 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class AlertAndPopup {
 
-    static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
-        driver.get("https://demo.automationtesting.in/Alerts.html");
+
+        driver.get("https://testautomationpractice.blogspot.com/p/playwrightpractice.html");
         driver.manage().window().maximize();
 
-        // Only Accept
-        WebElement SourceOfAlert = driver.findElement(By.xpath("//button[@class='btn btn-danger']"));
-        SourceOfAlert.click();
-        Thread.sleep(2000);
-        // Alert - Java's Interface
+        Actions action = new Actions(driver);
+
+        // =========================
+        // 1. Simple Alert
+        // =========================
+
+        WebElement element =
+                driver.findElement(By.xpath("//button[@id='alertBtn']"));
+
+        action.scrollToElement(element).perform();
+        action.click(element).perform();
+
+        Thread.sleep(1000);
+
         Alert alert = driver.switchTo().alert();
+
+        System.out.println("Alert Text: " + alert.getText());
+
         alert.accept();
+
         Thread.sleep(2000);
 
-        // Accept and Cancel
 
-        WebElement elementcancelaccept =  driver.findElement(By.xpath("//a[normalize-space()='Alert with OK & Cancel']"));
-        elementcancelaccept.click();
-        WebElement SourceOfAlert1 = driver.findElement(By.xpath("//button[@class='btn btn-primary']"));
-        SourceOfAlert1.click();
-        Thread.sleep(2000);
-        // Alert - Java's Interface
-        alert.accept();
-        Thread.sleep(2000);
-        SourceOfAlert1.click();
-        Thread.sleep(2000);
+        // =========================
+        // 2. Confirm Alert - Cancel
+        // =========================
 
-       SourceOfAlert1.click();
+        WebElement element1 =
+                driver.findElement(By.xpath("//button[@id='confirmBtn']"));
+
+        action.click(element1).perform();
+
+        Thread.sleep(1000);
+
+        // Switch to NEW alert
+        alert = driver.switchTo().alert();
+
+        System.out.println("Confirm Text: " + alert.getText());
 
         alert.dismiss();
-        Thread.sleep(2000);
 
-        // Alert with text box
+        Thread.sleep(1000);
 
-        WebElement elementinputfield =  driver.findElement(By.xpath("//a[normalize-space()='Alert with Textbox']"));
-        elementinputfield.click();
 
-        WebElement SourceOfAlert2 = driver.findElement(By.xpath("//button[@class='btn btn-info']"));
-        SourceOfAlert2.click();
+        // =========================
+        // 3. Confirm Alert - Accept
+        // =========================
+
+        action.click(element1).perform();
+
+        Thread.sleep(1000);
+
+        // Switch to NEW alert
+        alert = driver.switchTo().alert();
+
+        alert.accept();
+
+        Thread.sleep(1000);
+
+
+        // =========================
+        // 4. Prompt Alert - SendKeys
+        // =========================
+
+        WebElement element2 =
+                driver.findElement(By.xpath("//button[@id='promptBtn']"));
+
+        action.click(element2).perform();
+
+        Thread.sleep(1000);
+
+        // IMPORTANT:
+        // Switch to the newly opened prompt
+        alert = driver.switchTo().alert();
+
+        System.out.println("Prompt Text: " + alert.getText());
+
+        // Enter value
         alert.sendKeys("Hey Mythili");
+
+        Thread.sleep(1000);
+
+        // Click OK
         alert.accept();
 
-        WebElement SourceOfAlert3 = driver.findElement(By.xpath("//button[@class='btn btn-info']"));
-        SourceOfAlert3.click();
-        Thread.sleep(2000);
-        SourceOfAlert3.sendKeys("Hey Mythili");
-        Thread.sleep(2000);
-        alert.dismiss();
         Thread.sleep(2000);
 
 
-
-
-
-
+        // =========================
+        // Close Browser
+        // =========================
 
         driver.quit();
     }

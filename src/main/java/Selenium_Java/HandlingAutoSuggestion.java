@@ -26,16 +26,28 @@ public class HandlingAutoSuggestion {
         //
         WebElement SearchBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='gh-ac']")));
         SearchBox.sendKeys("iphone");
+        Thread.sleep(3000);
 
         // Wait For the suggestion
 
-        List<WebElement> suggestions = Collections.singletonList(wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@text()=iphone 15]"))));
+       // List<WebElement> suggestions = Collections.singletonList(wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@id='ebay-autocomplete']//li"))));
+
+        List<WebElement> suggestions = driver.findElements(By.xpath("//ul[@id='ebay-autocomplete']//li"));
+        System.out.println(suggestions.size());
+
+        for(int i=0;i<suggestions.size();i++){
+
+            System.out.println(suggestions.get(i).getText());
+            Thread.sleep(1000);
+
+        }
+
         // Select the required suggestion
 
         for(WebElement suggestion : suggestions){
 
             if(suggestion.getText().equals("iphone")){
-                suggestion.click();
+//                suggestion.click();
                 break;
 
             }
@@ -43,14 +55,6 @@ public class HandlingAutoSuggestion {
         }
 
         driver.quit();
-
-
-
-
-
-
-
-
 
 
 
