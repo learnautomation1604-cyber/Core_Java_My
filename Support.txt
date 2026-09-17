@@ -1,0 +1,13 @@
+Cucumber- BDD: - UI Functional Automation
+
+1. Feature file
+2. Step Definition File
+3. Page File
+4. Utility File
+5. Maven - Repo
+6. pom.xml
+7. Hooks
+8. Runner File
+9. Junit
+
+
