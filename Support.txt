@@ -10,4 +10,8 @@ Cucumber- BDD: - UI Functional Automation
 8. Runner File
 9. Junit
 
+How to Cucumber + WebDriver+Java Framework will work
+
+1. Hooks --> (Before method, Test Method ,After method)
+
 
