@@ -12,9 +12,10 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/java/StepDefinition/Search",
 
         },
+        tags = "@Regression",
 
         plugin = {
-                "pretty"
+                "pretty", "html:target/cucumber-report.html"
 
 
         },

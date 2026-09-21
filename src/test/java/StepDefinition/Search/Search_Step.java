@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import io.cucumber.messages.types.Hook;
 import org.openqa.selenium.By;
 
-public class step {
+public class Search_Step {
 
     @Given("User Lanc the url")
     public void user_lanc_the_url() {
@@ -47,5 +47,38 @@ public class step {
 
 
     }
+
+    @When("User Make The Empty Search")
+    public void user_make_the_empty_search() {
+        Hooks.driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("");
+
+
+
+    }
+
+    @Then("User Verfy the Empty Search")
+    public void user_verfy_the_empty_search() {
+
+        Hooks.driver.findElement(By.xpath("//h1[normalize-space()='All Categories']")).isDisplayed();
+
+    }
+
+    @When("User Enter the Productname {string}")
+    public void user_enter_the_productname(String productname) {
+
+        Hooks.driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys(productname);
+
+
+
+
+    }
+
+    @Then("User Verify the search Results")
+    public void user_verify_the_search_results() {
+
+        Hooks.driver.findElement(By.xpath("//h1[@id='srp-results-heading']")).isDisplayed();
+
+    }
+
 
 }
