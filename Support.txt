@@ -1,7 +1,9 @@
 Cucumber- BDD: - UI Functional Automation
 
-1. Feature file
+1. Feature file - Scenario, Given, When, Then, And, But, BackGround, ScenarioOutline, Examples, Tags
 2. Step Definition File
+
+
 3. Page File
 4. Utility File
 5. Maven - Repo

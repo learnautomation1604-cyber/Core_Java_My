@@ -13,15 +13,10 @@ public class Hooks {
 
     @Before
     public void before() {
-
         System.out.println("Before Hooks");
-
         driver = new ChromeDriver();
-
         driver.manage().window().maximize();
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-
         System.out.println("Driver initialized: " + driver);
     }
 
@@ -29,7 +24,6 @@ public class Hooks {
     public void after() {
 
         System.out.println("After Hooks");
-
         if (driver != null) {
             driver.quit();
             driver = null;
